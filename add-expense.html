@@ -9,28 +9,41 @@
 
 <style>
 body {
-    background: linear-gradient(to right, #4A6CF7, #6C5CE7);
-    color: white;
+    background-color: #F4F6F9;
 }
+
+.navbar {
+    background-color: #1E3A5F;
+}
+
+.btn-primary {
+    background-color: #2A6F97;
+    border: none;
+}
+
 .card {
-    border-radius: 15px;
+    border-radius: 12px;
 }
 </style>
 </head>
 
 <body>
 
-<div class="container mt-5">
-    <div class="text-center mb-4">
-        <h1> Ajouter une dépense</h1>
-        <p>Organisez facilement les dépenses de votre voyage</p>
+<nav class="navbar navbar-dark">
+    <div class="container">
+        <span class="navbar-brand">TripMate</span>
     </div>
+</nav>
 
-    <div class="card p-4 shadow">
+<div class="container mt-5">
+    <h2 class="mb-4">Ajouter une dépense</h2>
+
+    <div class="card shadow p-4">
         <form>
+
             <div class="mb-3">
                 <label class="form-label">Nom de la dépense</label>
-                <input type="text" class="form-control" placeholder="Ex: Restaurant">
+                <input type="text" class="form-control" placeholder="Ex : Restaurant">
             </div>
 
             <div class="mb-3">
@@ -63,7 +76,7 @@ body {
                 <input type="date" class="form-control">
             </div>
 
-            <div class="mb-3">
+            <div class="mb-4">
                 <label class="form-label">Catégorie</label>
                 <select class="form-select">
                     <option>Transport</option>
@@ -73,7 +86,8 @@ body {
                 </select>
             </div>
 
-            <button class="btn btn-success w-100">Ajouter la dépense</button>
+            <button class="btn btn-primary w-100">Ajouter la dépense</button>
+
         </form>
     </div>
 </div>
